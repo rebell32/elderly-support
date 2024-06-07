@@ -1,0 +1,41 @@
+import React, { useEffect, useState } from 'react'
+import hospDetails from '../../lib/hospital'
+import { Link, useParams } from 'react-router-dom'
+import checkUserLoggedIn from '../../lib/logintf'
+
+
+const HospitalDetails = () => {
+
+    const params = useParams()
+    const [hospital, setHospital] = useState()
+    const [loading, setLoading] = useState(true)
+
+    useEffect(()=>{
+        checkUserLoggedIn();
+    },[])
+
+    useEffect(() => {
+        const paramId = params?.id;
+        setHospital(hospDetails.find(hosp => hosp.hospId = paramId))
+        setLoading(false)
+        console.log(hospital)
+    }, [params])
+
+
+
+    return (
+        <div>
+            {
+                !loading &&
+                <>
+                    <h1>{hospital.hospName}</h1>
+                    
+                    <img src={hospital.imgsrc} alt={hospital.hospName} />
+                </>
+            }
+
+        </div>
+    )
+}
+
+export default HospitalDetails

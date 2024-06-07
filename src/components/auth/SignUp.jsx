@@ -22,10 +22,8 @@ const SignUp = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
-      await setDoc(doc(firestore, 'users', user.uid), { email: user.email, role: 'user' });
-
-      setError('');
-      navigate('/signin');
+      // await setDoc(doc(firestore, 'users', user.uid), { email: user.email, role: 'user' });
+      window.location.href = "/"
     } catch (error) {
       console.error('Error signing up:', error);
       setError('Failed to sign up. Please try again.');
