@@ -16,11 +16,12 @@ const HospitalDetails = () => {
 
     useEffect(() => {
         const paramId = params?.id;
-        setHospital(hospDetails.find(hosp => hosp.hospId = paramId))
+        console.log(paramId);
+        console.log(hospDetails);
+        setHospital(hospDetails.find(hosp => hosp.hospId = parseInt(paramId)))
         setLoading(false)
         console.log(hospital)
     }, [params])
-
 
 
     return (
