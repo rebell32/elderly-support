@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import hospDetails from '../../lib/hospital'
 import { Link, useParams } from 'react-router-dom'
 import checkUserLoggedIn from '../../lib/logintf'
+import SignOut from '../auth/SignOut';
 
 
 const HospitalDetails = () => {
@@ -26,6 +27,7 @@ const HospitalDetails = () => {
 
     return (
         <div>
+            <SignOut/>
             {
                 !loading &&
                 <>
@@ -34,7 +36,7 @@ const HospitalDetails = () => {
                     <img src={hospital.imgsrc} alt={hospital.hospName} />
                 </>
             }
-
+            
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import './App.css';
 import SignIn from './components/auth/SignIn';
-import AuthDetails from './components/AuthDetails';
+import SignOut from './components/auth/SignOut';
 import SignUp from './components/auth/SignUp';
 import Homepage from './components/pages/Homepage';
 import Navbar from './components/pages/NavBar';
@@ -19,10 +19,10 @@ function App() {
       <Routes>
              <Route path="/" element={<Homepage />} />
              <Route path="/signin" element={<SignIn />} />
+             <Route path="/signout" element={<SignOut/>}/>
              <Route path="/adminsignin" element={<AdminSignIn />} />
              <Route path="/signup" element={<SignUp />} />
              <Route path="/admindashboard" element={<AdminDashboard/>} /> 
-             <Route path="/authdetails" element={<AuthDetails />} />     
              <Route path="/hospitaldetails" element={<Hospitals />} />     
              <Route path={`/hospital/:id`} element={<HospitalDetails />} />     
              </Routes>

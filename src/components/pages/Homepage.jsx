@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import checkUserLoggedIn from '../../lib/logintf';
+import SignOut from '../auth/SignOut';
 
 export const Homepage = () => {
 
@@ -12,6 +13,7 @@ export const Homepage = () => {
   })
 
   return (
+    <>
     <div>
       <div className='flex flex-col text-5x1 font-semibold mb-1'>Homepage</div>
       <div className='flex'>
@@ -22,8 +24,9 @@ export const Homepage = () => {
 
         </li>
       </div>
+      <SignOut />
     </div>
-
+    </>
   )
 }
 

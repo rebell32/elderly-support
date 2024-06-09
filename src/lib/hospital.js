@@ -38,7 +38,7 @@ const hospDetails = [
         hospId: 1
     },
     {
-        imgsrc: "https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/01/2017-12-24-1024x768.jpg",
+        imgsrc: "https://th.bing.com/th/id/OIP.Go7PKFobKLkb0y71gheC-QHaGD?rs=1&pid=ImgDetMain",
         hospName: "Sagar",
         aboutHosp: "Sagar Hospital is known for its excellent healthcare services and facilities.",
         hospId: 2
