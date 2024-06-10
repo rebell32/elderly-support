@@ -14,7 +14,7 @@ const HospDetails = () => {
             <div className='flex flex-col flex-wrap gap-2 justify-center'>
             {
                 hospDetails.map((hosp, index) => (
-                    <a href={`/hospital/${hosp.hospId}`} id={index} className='min-h-24 flex justify-between border-2 border-blue-500 rounded-lg'>
+                    <a href={`/hospital/${hosp.hospId}`} id={index} className='min-h-24 flex justify-between border-2 border-yellow-300 rounded-lg'>
                         <p className='p-8 font-semibold text-xl'>{hosp.hospName}</p>
                         <img src={hosp.imgsrc} alt={hosp.hospName} className='h-36 rounded' />
                     </a>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import hospDetails from '../../lib/hospital'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import checkUserLoggedIn from '../../lib/logintf'
 import SignOut from '../auth/SignOut';
 
@@ -34,6 +34,7 @@ const HospitalDetails = () => {
                     <h1>{hospital.hospName}</h1>
                     
                     <img src={hospital.imgsrc} alt={hospital.hospName} />
+
                 </>
             }
             

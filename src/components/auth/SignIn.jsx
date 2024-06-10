@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { auth } from "../../firebase";
 import Cookies from 'js-cookie'
 import { useNavigate } from "react-router-dom";
+import Navbar from "../pages/NavBar";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -35,7 +36,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen "> 
+    <div className="flex items-center justify-center min-h-screen"> 
     <div 
         className="fixed inset-0"
         style={{ 
@@ -46,6 +47,7 @@ const SignIn = () => {
           zIndex: -1
         }}
       ></div>
+      < Navbar />
       <div className="bg-yellow-300 p-8 rounded shadow-xl w-80 ">
         <form onSubmit={signIn} className="flex flex-col items-center">
           <h1 className="text-black mb-4 text-xl font-bold ">Log In </h1>

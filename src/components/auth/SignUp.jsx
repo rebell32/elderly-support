@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth, firestore } from '../../firebase';
-import { doc, setDoc } from 'firebase/firestore';
+import { auth } from '../../firebase';
+// import { doc, setDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../pages/NavBar';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
@@ -41,6 +42,7 @@ const SignUp = () => {
         zIndex:-1
           }}>
       </div>
+      <Navbar />
       <div className="bg-yellow-300 p-8 rounded shadow-md w-80 ">
       <form onSubmit={signUp} className="flex flex-col items-center">
         <h1 className="text-black mb-4 text-2xl font-bold">Create your account</h1>
