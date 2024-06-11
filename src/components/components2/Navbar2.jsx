@@ -24,7 +24,7 @@ const Navbar2 = () =>{
 
                 <ul className='flex flex-col fixed w-full h-full items-center justify center'>
                     <li className='font-bold text-2xl p-8'>Home</li>
-                    <li className='font-bold text-2xl p-8'>Hospitals</li>
+                    <a href="/hospitals" className='font-bold text-2xl p-8'>Hospitals</a>
                     <li className='font-bold text-2xl p-8'>Hospices</li>
                     <li className='font-bold text-2xl p-8'>Nursing Homes</li>
                     <li className='font-bold text-2xl p-8'>Companions</li>
