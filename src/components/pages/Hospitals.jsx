@@ -11,6 +11,7 @@ const HospDetails = () => {
     
 
     return (
+
         <div>
             
             <div style={{ height: '75px' }}></div> {/* Spacer div */}
@@ -25,7 +26,6 @@ const HospDetails = () => {
                             className='h-36 rounded' 
                             style={{ width: '150px', height: '150px', objectFit: 'cover' }} 
                         />
-                        {/* <img src={hosp.imgsrc} alt={hosp.hospName} className='h-36 rounded' /> */}
                     </a>
                 ))
             }

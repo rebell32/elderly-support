@@ -42,7 +42,7 @@ const Footer2 = () => {
         </div>
 
         <div className='flex flex-col max-w-[1200px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500'>
-            <p className='py4'>2024 AgeWiseAid, LLC. All rights reserved</p>
+            <p className='py4'>2024 SeniorSimplicity, LLC. All rights reserved</p>
         </div>
     </div>
     )
