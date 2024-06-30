@@ -5,9 +5,6 @@ import SignOut from '../auth/SignOut';
 
 export const Homepage = () => {
 
-  // const [userIsLoggedIn, setUserIsLoggedIn] = useState(false)
-  // const navigate = useNavigate();
-
   useEffect(()=>{
     checkUserLoggedIn();
   })

@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-black text-lg font-bold">SeniorSimplicity</div>
                 <div className="space-x-4">
-                    <Link to="/signin" className="text-black hover:text-black-600">Sign In</Link>
+                    <Link to="/signout" className="text-black hover:text-black-600">Sign Out</Link>
                     <Link to="/signup" className="text-black hover:text-black-600">Sign Up</Link>
                     <Link to="/" className="text-black hover:text-black-600">Home</Link>
                     <Link to="/adminsignin" className="text-black hover:text-gray-400">Admin Login</Link>

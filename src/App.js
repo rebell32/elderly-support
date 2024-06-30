@@ -14,6 +14,8 @@ import Hero from './components/components2/Hero';
 import Health from './components/components2/Health';
 import Companion2 from './components/components2/Companion2';
 import Footer2 from './components/components2/Footer2';
+import Hospices from './components/pages/Hospice';
+import HospiceDetails from './components/pages/HospitalDetails';
 
 
 // function App() {
@@ -75,6 +77,8 @@ function App() {
           <Route path="/admindashboard" element={<AdminDashboard />} />
           <Route path="/hospitals" element={<Hospitals />} />
           <Route path="/hospital/:id" element={<HospitalDetails />} />
+          <Route path="/hospices" element={<Hospices/>} />
+          <Route path="/hospices/:id" element={<HospiceDetails />} />
         </Routes>
       </div>
     </Router>

@@ -27,7 +27,7 @@ const SignOut = () => {
         console.log("Sign out successful");
         Cookies.remove("_user");// removes cookies
         setAuthUser(null);//clear authUser state
-          Navigate("/signin");
+        Navigate("/signin");
       })
       .catch((error) => console.error("Error signing out:", error));
   };

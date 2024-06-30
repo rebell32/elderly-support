@@ -8,20 +8,27 @@ import SignOut from '../auth/SignOut';
 const HospitalDetails = () => {
 
     const params = useParams()
-    const [hospital, setHospital] = useState()
+    const [hospital, setHospital] = useState(null)
     const [loading, setLoading] = useState(true)
 
     useEffect(()=>{
         checkUserLoggedIn();
     },[])
 
+    // useEffect(() => {
+    //     const paramId = params?.id;
+    //     console.log(paramId);
+    //     console.log(hospDetails);
+    //     setHospital(hospDetails.find(hosp => hosp.hospId = parseInt(paramId)))
+    //     setLoading(false)
+    //     console.log(hospital)
+    // }, [params])
+
     useEffect(() => {
         const paramId = params?.id;
-        console.log(paramId);
-        console.log(hospDetails);
-        setHospital(hospDetails.find(hosp => hosp.hospId = parseInt(paramId)))
+        const selectedHospital = hospDetails.find(hosp => hosp.hospId === parseInt(paramId))
+        setHospital(selectedHospital)
         setLoading(false)
-        console.log(hospital)
     }, [params])
 
 
@@ -42,4 +49,4 @@ const HospitalDetails = () => {
     )
 }
 
-export default HospitalDetails
+export default HospitalDetails;

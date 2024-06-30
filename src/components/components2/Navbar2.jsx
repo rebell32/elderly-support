@@ -23,11 +23,12 @@ const Navbar2 = () =>{
                 : 'absolute top-0 h-screen left-[-100%] ease-in duration-500 z-10'}>
 
                 <ul className='flex flex-col fixed w-full h-full items-center justify center'>
-                    <li className='font-bold text-2xl p-8'>Home</li>
+                    <a href='/' className='font-bold text-2xl p-8'>Home</a>
                     <a href="/hospitals" className='font-bold text-2xl p-8'>Hospitals</a>
-                    <li className='font-bold text-2xl p-8'>Hospices</li>
-                    <li className='font-bold text-2xl p-8'>Nursing Homes</li>
-                    <li className='font-bold text-2xl p-8'>Companions</li>
+                    <a href="/hospices" className='font-bold text-2xl p-8'>Hospices</a>
+                    <a href="/nursinghomes" className='font-bold text-2xl p-8'>Nursing Homes</a>
+                    <a href="/companions" className='font-bold text-2xl p-8'>Companions</a>
+                    <a href="/pharmacies" className='font-bold text-2xl p-8'>Pharmacies</a>
                 </ul> 
             </div>   
         </div>
