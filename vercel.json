@@ -11,6 +11,9 @@
         "src": "/api/analytics",
         "dest": "/app.py"
       }
-    ]
+    ],
+    "env": {
+    "GOOGLE_APPLICATION_CREDENTIALS_JSON": "@google_application_credentials_json"
+  }
   }
   
