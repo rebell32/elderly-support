@@ -1,37 +1,5 @@
-// import React, { useEffect, useState } from 'react';
-
-// const VolunteerList = () => {
-//     const [volunteers, setVolunteers] = useState([]);
-
-//     useEffect(() => {
-//         const fetchVolunteers = async () => {
-//             const response = await fetch('http://localhost:5000/get_volunteers');
-//             if (response.ok) {
-//                 const data = await response.json();
-//                 setVolunteers(data);
-//             } else {
-//                 console.error('Failed to fetch volunteers');
-//             }
-//         };
-//         fetchVolunteers();
-//     }, []);
-
-//     return (
-//         <div>
-//             <h2>Volunteer List</h2>
-//             <ul>
-//                 {volunteers.map(volunteer => (
-//                     <li key={volunteer.id}>
-//                         {volunteer.name} - {volunteer.email} - {volunteer.phone} - {volunteer.availability}
-//                     </li>
-//                 ))}
-//             </ul>
-//         </div>
-//     );
-// };
-
-// export default VolunteerList;
 import React, { useEffect, useState } from 'react';
+import Navbar from './NavBar';
 
 const VolunteerList = () => {
     const [volunteers, setVolunteers] = useState([]);
@@ -78,6 +46,7 @@ const VolunteerList = () => {
                     <p className="text-center text-gray-600">No volunteers available</p>
                 )}
             </div>
+            <Navbar />
         </div>
     );
 };
