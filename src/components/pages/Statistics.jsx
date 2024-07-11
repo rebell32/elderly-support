@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-export const AdminDashboard = () => {
+export const Statistics = () => {
   return (
     
-    <div>AdminDashboard</div>
+    <div>DV reports</div>
   )
 }
 
-export default AdminDashboard;
+export default Statistics;
 // import React from 'react';
 
 // const AdminDashboard = () => {
