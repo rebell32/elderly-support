@@ -17,6 +17,8 @@ import Hospices from './components/pages/Hospice';
 import NursingHomes from './components/pages/NursingHomes';
 import Companions from './components/pages/Companions';
 import Pharmacies from './components/pages/Pharmacies';
+import VolunteersForm from './components/pages/VolunteersForm';
+import VolunteersList from './components/pages/VolunteersList';
 
 function App() {
   return (
@@ -50,6 +52,8 @@ function App() {
           <Route path="/nursinghomes" element={<NursingHomes />} />
           <Route path="/companions" element={<Companions />} />
           <Route path="/pharmacies" element={<Pharmacies />} />
+          <Route path="/volunteers" element={<VolunteersForm />} />
+          <Route path="/volunteer-list" element={<VolunteersList />} />
 
         </Routes>
       </div>

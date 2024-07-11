@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -7,10 +6,12 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-black text-lg font-bold">SeniorSimplicity</div>
                 <div className="space-x-4">
-                    <Link to="/signout" className="text-black hover:text-black-600">Sign Out</Link>
-                    <Link to="/signup" className="text-black hover:text-black-600">Sign Up</Link>
-                    <Link to="/" className="text-black hover:text-black-600">Home</Link>
-                    <Link to="/statistics" className="text-black hover:text-gray-400">Statistics</Link>
+                    <a href="/signout" className="text-black font-semibold hover:text-gray-400">Sign Out</a>
+                    <a href="/signup" className="text-black font-semibold hover:text-gray-400">Sign Up</a>
+                    <a href="/" className="text-black font-semibold hover:text-gray-400">Home</a>
+                    <a href="/statistics" className="text-black font-semibold hover:text-gray-400">Statistics</a>
+                    <a href="/volunteer-list" className='text-black font-semibold hover:text-gray-400'>Volunteer List</a>
+                    <a href="/volunteers" className='text-black font-semibold hover:text-gray-400'>Volunteer Signup</a>
                 </div>
             </div>
         </nav>

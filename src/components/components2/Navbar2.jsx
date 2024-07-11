@@ -29,6 +29,8 @@ const Navbar2 = () =>{
                     <a href="/nursinghomes" className='font-bold text-2xl p-8'>Nursing Homes</a>
                     <a href="/companions" className='font-bold text-2xl p-8'>Companions</a>
                     <a href="/pharmacies" className='font-bold text-2xl p-8'>Pharmacies</a>
+                    <a href="/volunteers" className='font-bold text-2xl p-8'>Volunteer Signup</a>
+                    
                 </ul> 
             </div>   
         </div>
