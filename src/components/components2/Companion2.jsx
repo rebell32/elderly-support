@@ -5,8 +5,7 @@ const Companion2 = () => {
         <div className='max-w-[1200px] h-[650px] m-auto bg-yellow-100 my-10 pt-16 lg:mb-[20%] md:mb-[35%] px-4 grid lg:grid-cols-3 gap-4'>
             <div className='lg:top-20 relative lg:col-span-1 col-span-2'>
                 <h3 className='text-5xl md:text-6xl font-bold'>Companions for your Aid</h3>
-                <p className='pt-4'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Culpa quis sit voluptatum ratione maiores iusto.
+                <p className='pt-4'>Our detailed listings include contact information, addresses (both area-wise and complete), and website URLs, ensuring you have all the necessary details at your fingertips. We aim to make it easier for you to find the healthcare services you need quickly and efficiently, with comprehensive information to help you make informed decisions about your health and wellbeing.
                 </p>
             </div>
 
