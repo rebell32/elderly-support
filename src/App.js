@@ -5,8 +5,8 @@ import SignUp from './components/auth/SignUp';
 import Homepage from './components/pages/Homepage';
 import Navbar from './components/pages/NavBar';
 import AdminSignIn from './components/auth/AdminSignIn';
-import Statistics from './components/pages/Statistics';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Statistics from './components/pages/Statistics';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 import Hospitals from './components/pages/Hospitals';
 import Navbar2 from './components/components2/Navbar2';
 import Hero from './components/components2/Hero';
@@ -46,7 +46,7 @@ function App() {
           <Route path="/signout" element={<SignOut />} />
           <Route path="/adminsignin" element={<AdminSignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/statistics" element={<Statistics />} />
+          {/* <Route path="/statistics" element={<Statistics />} /> */}
           <Route path="/hospitals" element={<Hospitals />} />
           <Route path="/hospices" element={<Hospices/>} />
           <Route path="/nursinghomes" element={<NursingHomes />} />
@@ -54,6 +54,7 @@ function App() {
           <Route path="/pharmacies" element={<Pharmacies />} />
           <Route path="/volunteers" element={<VolunteersForm />} />
           <Route path="/volunteer-list" element={<VolunteersList />} />
+          <Route path="/chart" element={<Navigate to="/chart.html" />} />
 
         </Routes>
       </div>

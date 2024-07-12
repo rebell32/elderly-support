@@ -12,6 +12,14 @@ const Navbar = () => {
                     <a href="/statistics" className="text-black font-semibold hover:text-gray-400">Statistics</a>
                     <a href="/volunteers" className='text-black font-semibold hover:text-gray-400'>Volunteer Signup</a>
                     <a href="/volunteer-list" className='text-black font-semibold hover:text-gray-400'>Volunteer List</a>
+                    <a href="/chart.html" className='text-black font-semibold hover:text-gray-400'
+                                onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href = '/chart.html';
+                                }}
+>
+  Statistics
+</a>
                 </div>
             </div>
         </nav>
