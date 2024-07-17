@@ -66,14 +66,14 @@ def get_hospitals():
     return jsonify(result)
 
 # Route to get a specific hospital by ID
-@app.route('/get_hospital/<int:id>', methods=['GET'])
-def get_hospital(id):
-    db = Database()
-    query = "SELECT * FROM hospitals_final WHERE `Master ID` = %s"
-    params = (id,)
-    result = db.select(query, params)
-    db.close()
-    return jsonify(result[0]) if result else jsonify({'error': 'Hospital not found'}), 404
+# @app.route('/get_hospital/<int:id>', methods=['GET'])
+# def get_hospital(id):
+#     db = Database()
+#     query = "SELECT * FROM hospitals_final WHERE `Master ID` = %s"
+#     params = (id,)
+#     result = db.select(query, params)
+#     db.close()
+#     return jsonify(result[0]) if result else jsonify({'error': 'Hospital not found'}), 404
 
 # Route to update a hospital's locality
 @app.route('/update_hospital', methods=['POST'])

@@ -17,3 +17,4 @@ const checkUserLoggedIn = () => {
 }
 
 export default checkUserLoggedIn;
+
